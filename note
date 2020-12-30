@@ -39,6 +39,27 @@ NOTE: You will see in your IDE terminal that a GET request has been made.
 
 7. On the IDE click (Version Control- VCS) TO Add
 -Click (Enable Version Control Integration), click OK
-- click on VCS again, click on commit 
+- click on VCS again, click on (Git) commit
+-Check all files and directory
+- You can uncheck the (node_module) folder
+- You can add (comment)
+- Click on (commit folder)
+-A login window will open (Type in github Name: & Email)
+-Go back and click on (Git)
+- click on (push)
+-click on (Define Remote)
+- Now, go to your Github plateform and create a repository, and copy the URL Link
+Example: https://github.com/felixTechnology/AngularNodeMysQlEcommerce.git
+- paste it in the IDE popup asking for the URL ,to process the PUSH
+-click on Master (on top-left) and clear the Master word @ master-origin, afterwards write your initial (push) word (xample: initial-server-setup)
 
 
+7. FOR DATABASE
+- go click on xampp server app
+- start the server and database
+- go to browser and enter (localhost:80/phpmyadmin)
+- create your database by clicking on (New), in your mysql
+-give database name (example: amalitech-shop)
+
+NOTE: Foreign-key, is an attribute that link(s) one table to another.
+Example: (order) table is linked to (user) table ,by
