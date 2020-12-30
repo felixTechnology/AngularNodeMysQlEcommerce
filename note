@@ -1,0 +1,44 @@
+1.Go to (nodejs.org)
+-download the installer package
+
+2. You will need mysql apache (xampp) for the database
+-download the xampp and install
+
+3. Download your IDE (Either PPStorm, Visual Studio,etc)
+-
+
+4. Download the cli for Angular
+-go to (cli.angular.io)
+- use (npm install -g @angular/cli), the(npm install) comes with the noe js
+
+
+5. Click file on Phptorm
+- select (New Project)
+-select (Express)
+-(View Engine), select (none)
+-(Stylesheet), select (plain CSS)
+- create your project folder at (Location,by giving it names), example (clear the untiled and put your names)
+C:\Users\fackuayi\PhpstormProjects\Ecommerce\untitled
+-Example: (C:\Users\fackuayi\PhpstormProjects\Ecommerce\Ecommerce\backend)
+-click CREATE
+
+-Everything is now created, you see (bin, node_modules,public,routes,app.js)
+- the app.js is the back-end server for express app
+-Go inside the (bin) folder, click (www), you can test the server by typing in, console.log('server running');,inside the onListening() method which is located down the file
+-Now, go to the IDE terminal ,type (npm start), and see if it will give you the output or not
+If it runs you will see the output as (consoled) in the (www) file.
+NOTE:The console.log('server is running) as written in the (www) file located down,is what is displayed for your test. By default the (npm start) goes into the (package.json)
+file to go and trigger ("start": "node ./bin/www) for the server to display the content in (www)
+
+6. Change the (node) to (nodemon) in the (package.json file)
+NB: (nodemon), automatically refreshes the (server) anytime there is a change
+- after changing to (nodemon), go to terminal and START NPM again (npm start)
+if it throws error, solve the error my installing (nodemon) globally using (npm install -g nodemon)
+- Go to your browser and type (localhost:3000)
+NOTE: You will see in your IDE terminal that a GET request has been made.
+
+7. On the IDE click (Version Control- VCS) TO Add
+-Click (Enable Version Control Integration), click OK
+- click on VCS again, click on commit 
+
+
