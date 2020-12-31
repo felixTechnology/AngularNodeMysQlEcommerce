@@ -62,4 +62,71 @@ Example: https://github.com/felixTechnology/AngularNodeMysQlEcommerce.git
 -give database name (example: amalitech-shop)
 
 NOTE: Foreign-key, is an attribute that link(s) one table to another.
-Example: (order) table is linked to (user) table ,by
+Example: (order) table is linked to (user) table ,by assigning the USER ID to the ORDER ID
+
+
+8. We need a package in (app.js) called (cors) which means (Cross Origin resource sharing), which helps to share resources with
+   different domains
+  - Add, var cors = require('cors');
+  . Hover over the underline that appears on the above, click on (More actions), click on (install cors)
+  . changed all the (vars) to (const)
+  - After (const app = express();) which is in (app.js) , introduce a middle-weight  as below, and call and configure the (cors function)
+  app.use(cors({
+         origin: "*",
+         methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT'],
+         allowedHeaders: 'Content-Type, Authorization, origin, x-Requested-With, Accept'
+    }))
+ - Remove the below from the (app.js)
+ app.use('/', indexRouter);
+ app.use('/users', usersRouter);
+
+ 9. Create a new folder in your project, and name (config), inside it create a js file (helpers.js)
+ - Go to (npmjs.com) and download a package
+ - Type in (mysqli) and download by clicking on (mysqli), which is a package by (yutent), it is in Chinnese so write-click with mouse and click to select translate to english
+ NOTE: This will let you not write any sql query.
+- Go to https://github.com/bytedo/mysqli/blob/HEAD/docs/3.x.md
+NOTE: This is a documentation on how to connect to mysqli for query to the database
+ - copy (require('mysqli')) from the documentation
+ - in your (helpers.js) which is in the folder (config) which you created, paste (require('mysqli')) but put it in a variable as shown below
+    Note: const MySqli = require('mysqli'), and hover to click on (install mysqli)
+ - connect to the database by following line of code in (helpers.js)
+
+    let conn = new MySqli({
+       host: 'localhost',
+        post: 3300,
+        user: 'root',
+        pass: '',
+        db: 'amalitech_shop'
+    });
+
+    NB: (host, post, user, pass, db), are from the documentation from (npm) platform as stated above in (point 9)
+
+     host, is the local server xampp for your database
+     post, is the default port provided in the (npm) documentation
+     user, is the user for your mysql database
+     pass, is the password to your mysql database, if any just provide it
+     db,   is the name of your database
+
+  - create another variable in your (helpers.js), and call an (emit function), to your (conn) variable which is seen above
+  - create an export object for the database which will be used in the whole Project
+  module.exports = {
+      database: db
+  }
+
+
+
+10. Go inside your routes folder and refactor the (products.js) to (products.js)
+- move the (const app = express();) and position under (cors)
+- change the variable names of (indexRouter, usersRouter) to (productsRoute,userRoute)
+- create the below to use the routes in (app.js)
+
+//Use Routes
+app.use('/api/products',productsRoute);
+app.use('/api/users',usersRoute);
+
+- Go into (products.js)
+. Change the (var) to (const)
+.Create , const {database} = require('../config/helpers');
+. clear the (next) from the
+   router.get('/', function(req,res,next)){}
+. clear the content in the router.get() {} scope
