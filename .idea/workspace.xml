@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="db6c5d28-8a36-4c9e-9066-0c9dc1f4eff9" name="Default Changelist" comment="" />
+    <list default="true" id="db6c5d28-8a36-4c9e-9066-0c9dc1f4eff9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NOTE HOW TO USE MYSQL IN CMD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/orders.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,14 +56,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="11.12.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.2.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="11.12.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../xampp/htdocs/payswitchEdziban" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\fackuayi\AppData\Local\JetBrains\PhpStormChristmas\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="db6c5d28-8a36-4c9e-9066-0c9dc1f4eff9" name="Default Changelist" comment="" />
@@ -48,6 +76,9 @@
       <option name="presentableId" value="Default" />
       <updated>1609339489374</updated>
       <workItem from="1609339490617" duration="21531000" />
+      <workItem from="1609489214736" duration="9603000" />
+      <workItem from="1609536566640" duration="15586000" />
+      <workItem from="1609708687499" duration="5998000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1609345206239</created>
@@ -67,12 +98,62 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Initial Commit-2" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit-2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609531766702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="690" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609531766702" />
+    <state x="743" y="213" key="FileChooserDialogImpl" timestamp="1609691355666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="743" y="213" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609691355666" />
+    <state width="1024" height="208" key="GridCell.Tab.0.bottom" timestamp="1609546520142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609546520142" />
+    <state width="1024" height="208" key="GridCell.Tab.0.center" timestamp="1609546520142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609546520142" />
+    <state width="1024" height="208" key="GridCell.Tab.0.left" timestamp="1609546520141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609546520141" />
+    <state width="1024" height="208" key="GridCell.Tab.0.right" timestamp="1609546520142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609546520142" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1609531739873">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1609531739873" />
+    <state x="1147" y="490" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1609510945899">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1147" y="490" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.824@0.0.1536.824" timestamp="1609510945899" />
+    <state x="1029" y="294" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609510202207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1029" y="294" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1609510202207" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -80,13 +161,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
           <line>17</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/products.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

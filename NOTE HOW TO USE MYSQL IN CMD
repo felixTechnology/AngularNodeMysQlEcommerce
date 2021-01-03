@@ -1,0 +1,162 @@
+
+C:\Users\felix>sudo mysql
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\felix>cd..
+
+C:\Users>cd..
+
+C:\>cd xampp
+
+C:\xampp>cd mysql
+
+C:\xampp\mysql>cd bin
+
+C:\xampp\mysql\bin>mysql
+ERROR 1045 (28000): Access denied for user 'felix'@'localhost' (using password: NO)
+
+C:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 60
+Server version: 10.4.11-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| amalitech_shop     |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+6 rows in set (0.009 sec)
+
+MariaDB [(none)]> CREATE DATABASE TESTDB;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> show databases
+    ->
+    -> show databases;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show databases' at line 3
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| amalitech_shop     |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| testdb             |
++--------------------+
+7 rows in set (0.005 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| amalitech_shop     |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| testdb             |
++--------------------+
+7 rows in set (0.004 sec)
+
+MariaDB [(none)]> USE TESTDB;
+Database changed
+MariaDB [TESTDB]> show Tables
+    -> show Tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show Tables' at line 2
+MariaDB [TESTDB]> show Tables;
+Empty set (0.001 sec)
+
+MariaDB [TESTDB]> CREATE TABLE TBLUSER(
+    -> ID INT(11) NOT NULL,
+    -> USERNAME VARCHAR(30));
+Query OK, 0 rows affected (0.394 sec)
+
+MariaDB [TESTDB]> SHOW TABLES;
++------------------+
+| Tables_in_testdb |
++------------------+
+| tbluser          |
++------------------+
+1 row in set (0.001 sec)
+
+MariaDB [TESTDB]> DESCRIBE TBLUSER;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| ID       | int(11)     | NO   |     | NULL    |       |
+| USERNAME | varchar(30) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.061 sec)
+
+MariaDB [TESTDB]> ALTER TABLE TBLUSER
+    -> ADD FNAME VARCHAR (30) NOT NULL
+    -> AFTER ID;
+Query OK, 0 rows affected (0.228 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [TESTDB]> DESCRIBE TBLUSER;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| ID       | int(11)     | NO   |     | NULL    |       |
+| FNAME    | varchar(30) | NO   |     | NULL    |       |
+| USERNAME | varchar(30) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.006 sec)
+
+MariaDB [TESTDB]> ALTER TABLE TBLUSER
+    -> ADD PRIMARY KEY (1D);
+ERROR 1072 (42000): Key column '1D' doesn't exist in table
+MariaDB [TESTDB]> ADD PRIMARY KEY (ID);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ADD PRIMARY KEY (ID)' at line 1
+MariaDB [TESTDB]> ALTER TABLE TBLUSER
+    -> ADD PRIMARY KEY (ID);
+Query OK, 0 rows affected (1.244 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [TESTDB]> DESCRIBE TBLUSER;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| ID       | int(11)     | NO   | PRI | NULL    |       |
+| FNAME    | varchar(30) | NO   |     | NULL    |       |
+| USERNAME | varchar(30) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.006 sec)
+
+MariaDB [TESTDB]> ALTER TBLUSER
+    -> MODIFY ID INT NOT NULL AUTO_INCREMENT;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TBLUSER
+MODIFY ID INT NOT NULL AUTO_INCREMENT' at line 1
+MariaDB [TESTDB]> ALTER TABLE  TBLUSER
+    -> MODIFY ID INT(11) NOT NULL AUTO_INCREMENT;
+Query OK, 0 rows affected (1.064 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [TESTDB]> DESCRIBE TBLUSER;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| ID       | int(11)     | NO   | PRI | NULL    | auto_increment |
+| FNAME    | varchar(30) | NO   |     | NULL    |                |
+| USERNAME | varchar(30) | YES  |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+3 rows in set (0.039 sec)
+
+MariaDB [TESTDB]>
